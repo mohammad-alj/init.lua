@@ -41,6 +41,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
+                "gopls"
             },
             handlers = {
                 lsp_zero.default_setup,

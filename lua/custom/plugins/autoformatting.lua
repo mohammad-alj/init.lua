@@ -1,12 +1,13 @@
 return {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = 'go',
     opts = function()
         local null_ls = require("null-ls")
         local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
         return {
+            filetypes = {"go", "py"},
             sources = {
+                null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.gofumpt,
                 null_ls.builtins.formatting.goimports_reviser,
                 null_ls.builtins.formatting.golines,

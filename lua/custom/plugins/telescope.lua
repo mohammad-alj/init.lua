@@ -13,7 +13,5 @@ return {
         vim.keymap.set("n", "<leader>fr", builtin.oldfiles, {})
         vim.keymap.set("n", "<leader>fg", builtin.git_files, {})
         vim.keymap.set("n", "<leader>fs", builtin.live_grep, {})
-
-        require("telescope").load_extension("fzf")
     end
 }

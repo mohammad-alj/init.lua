@@ -16,5 +16,20 @@ vim.keymap.set('n', '<leader>gb', ':Gitsigns toggle_current_line_blame<CR>', { d
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- Open netrw
-vim.keymap.set('n', '<leader>fe', ':Ex<CR>', { desc = 'Open a netrw buffer' })
+-- greatest remap ever
+vim.keymap.set('x', '<leader>p', [["_dP]], { desc = '[P]aste without copying text' })
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = '[Y]ank to system clipboard' })
+vim.keymap.set('n', '<leader>Y', [["+Y]])
+
+vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]], { desc = '[D]elete without copying text' })
+
+-- Mark file as executable
+vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true, desc = 'Mark file as E[X]utable' })
+
+-- Replace word
+vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Replace hovered word on all of the file' })
+
+-- Golang stuff
+vim.keymap.set('n', '<leader>ge', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')

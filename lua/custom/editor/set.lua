@@ -14,8 +14,9 @@ vim.opt.expandtab = true
 -- Enable smart indenting
 vim.opt.smartindent = true
 
--- [[ Setting options ]]
--- NOTE: For more options, you can see `:help option-list`
+-- Disable backups
+vim.opt.swapfile = false
+vim.opt.backup = false
 
 -- Enable relative line number
 vim.opt.number = true

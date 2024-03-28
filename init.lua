@@ -39,8 +39,6 @@ require('lazy').setup('custom.plugins', opts)
 
 -- TODO: learn about the plugins in lua/kickstart/plugins
 
--- TODO: Check if the other files provided by kickstart should be deleted
-
 -- TODO: learn what the hell this is below
 
 -- The line beneath this is called `modeline`. See `:help modeline`

@@ -34,7 +34,7 @@ return {
             },
             lualine_x = { { 'hostname', icon = '󱩛' } },
             lualine_y = { { 'location', icon = '' } },
-            lualine_z = { { 'progress', icon = '󰗧' } },
+            lualine_z = { 'progress' },
         },
         inactive_sections = {
             lualine_a = {},

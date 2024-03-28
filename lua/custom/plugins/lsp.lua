@@ -8,7 +8,6 @@ return { -- LSP Configuration & Plugins
         'WhoIsSethDaniel/mason-tool-installer.nvim',
 
         -- Useful status updates for LSP.
-        -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
         { 'j-hui/fidget.nvim', opts = {} },
 
         -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -76,7 +75,7 @@ return { -- LSP Configuration & Plugins
 
                 -- Fuzzy find all the symbols in your current document.
                 --  Symbols are things like variables, functions, types, etc.
-                map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+                map('<leader>os', require('telescope.builtin').lsp_document_symbols, 'D[O]cument [S]ymbols')
 
                 -- Fuzzy find all the symbols in your current workspace.
                 --  Similar to document symbols, except searches over your entire project.

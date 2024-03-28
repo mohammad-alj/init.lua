@@ -24,11 +24,11 @@ return {
             lualine_a = { { 'mode', icon = '' } },
             lualine_b = { { 'branch', icon = '' }, { 'diff', padding = { left = 0, right = 1 } } },
             lualine_c = {
-                { 'filetype', icon_only = true, padding = { left = 1 } },
+                { 'filetype', icon_only = true, padding = { left = 1 }, colored = false },
                 {
                     'filename',
                     padding = 0,
-                    path = 1 --[[Relative path]],
+                    path = 1 --[[ Relative path ]],
                 },
                 'diagnostics',
             },
@@ -39,7 +39,7 @@ return {
         inactive_sections = {
             lualine_a = {},
             lualine_b = {},
-            lualine_c = { 'filename' },
+            lualine_c = { { 'filename', path = 1 } },
             lualine_x = {},
             lualine_y = {},
             lualine_z = {},

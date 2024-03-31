@@ -29,7 +29,7 @@ return { -- Autocompletion
         'saadparwaiz1/cmp_luasnip',
 
         -- Adds other completion capabilities.
-        --  nvim-cmp does not ship with all sources by default. They are split
+        --  nvim-cmp does not ship with all sources by efault. They are split
         --  into multiple repos for maintenance purposes.
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-path',
@@ -39,6 +39,15 @@ return { -- Autocompletion
         local cmp = require 'cmp'
         local luasnip = require 'luasnip'
         luasnip.config.setup {}
+
+        local icons = {
+            Text = '',
+            Keyword = '󰌋',
+            Snippet = '',
+            Function = '󰊕',
+            Variable = '',
+            Field = '',
+        }
 
         cmp.setup {
             snippet = {
@@ -50,6 +59,16 @@ return { -- Autocompletion
             window = {
                 completion = cmp.config.window.bordered(),
                 documentation = cmp.config.window.bordered(),
+            },
+            ---@diagnostic disable-next-line: missing-fields
+            formatting = {
+                format = function(_, vim_item)
+                    local icon = icons[vim_item.kind]
+                    if icon ~= nil then
+                        vim_item.kind = icon .. ' ' .. vim_item.kind
+                    end
+                    return vim_item
+                end,
             },
 
             -- For an understanding of why these mappings were

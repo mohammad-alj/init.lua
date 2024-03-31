@@ -19,6 +19,7 @@ return { -- Autoformat
             typescript = { 'prettier' },
             html = { 'prettier' },
             css = { 'prettier' },
+            json = { 'pretter' },
             -- You can use a sub-list to tell conform to run *until* a formatter
             -- is found.
             -- javascript = {{'prettierd', 'prettier'}}

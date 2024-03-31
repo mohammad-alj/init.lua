@@ -47,6 +47,9 @@ return { -- Autocompletion
             Function = '󰊕',
             Variable = '',
             Field = '',
+            Module = '',
+            Class = '',
+            Constant = '󰏿',
         }
 
         cmp.setup {

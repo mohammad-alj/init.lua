@@ -1,4 +1,5 @@
-return {
+return {}
+--[[ return {
     'akinsho/bufferline.nvim',
     version = '*',
     dependencies = 'nvim-tree/nvim-web-devicons',
@@ -39,4 +40,4 @@ return {
         vim.keymap.set('n', '<C-v>', ':BufferLineCycleNext<CR>:BufferLineCloseLeft<CR>', { desc = 'Close this buffer and go the next one' }) -- CLose current buffer
         vim.keymap.set('n', '<C-a>', ':BufferLineCloseOthers<CR>', { desc = 'Close all buffers except this one' }) -- Close the rest of the buffer without this one
     end,
-}
+} ]]

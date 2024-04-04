@@ -1,6 +1,3 @@
--- Make curosr seem cooler
-vim.opt.guicursor = ''
-
 -- Set map leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -20,6 +17,8 @@ vim.opt.smartindent = true
 -- Disable backups
 vim.opt.swapfile = false
 vim.opt.backup = false
+vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
+vim.opt.undofile = true
 
 -- Enable relative line number
 vim.opt.number = true

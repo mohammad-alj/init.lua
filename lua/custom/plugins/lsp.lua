@@ -141,6 +141,7 @@ return { -- LSP Configuration & Plugins
             tsserver = {},
             html = {},
             cssls = {},
+            csharp_ls = {},
 
             lua_ls = {
                 -- cmd = {...},
@@ -177,6 +178,7 @@ return { -- LSP Configuration & Plugins
             'golines',
             'gofumpt',
             'goimports-reviser',
+            'csharpier',
         })
         require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

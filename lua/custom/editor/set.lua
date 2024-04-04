@@ -1,3 +1,6 @@
+-- Make curosr seem cooler
+vim.opt.guicursor = ''
+
 -- Set map leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

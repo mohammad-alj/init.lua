@@ -4,11 +4,14 @@
 return {
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
     {
-        'catppuccin/nvim',
-        name = 'catppuccin',
+        'navarasu/onedark.nvim',
+        name = 'onedark',
         priority = 1000,
-        init = function()
-            vim.cmd.colorscheme 'catppuccin-mocha'
+        config = function()
+            require('onedark').setup {
+                style = 'darker',
+            }
+            require('onedark').load()
         end,
     },
 

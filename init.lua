@@ -1,4 +1,4 @@
--- Requiires
+-- Requires
 require 'custom.editor.set'
 require 'custom.editor.remaps'
 require 'custom.editor.autocommands'

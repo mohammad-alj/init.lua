@@ -4,17 +4,14 @@
 return {
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
     {
-        'navarasu/onedark.nvim',
-        name = 'onedark',
+        'folke/tokyonight.nvim',
+        lazy = false,
         priority = 1000,
+        opts = {},
         config = function()
-            require('onedark').setup {
-                style = 'darker',
-            }
-            require('onedark').load()
+            vim.cmd.colorscheme 'tokyonight-night'
         end,
     },
-
     -- Highlight todo, notes, etc in comments
     { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 

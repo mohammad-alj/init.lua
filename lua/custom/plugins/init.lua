@@ -3,6 +3,7 @@
 
 return {
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
+    'ThePrimeagen/vim-be-good',
     {
         'folke/tokyonight.nvim',
         lazy = false,

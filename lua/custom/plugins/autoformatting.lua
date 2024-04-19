@@ -21,6 +21,7 @@ return { -- Autoformat
             css = { 'prettier' },
             json = { 'pretter' },
             cs = { 'csharpier' },
+            python = { 'black', 'isort' },
             -- You can use a sub-list to tell conform to run *until* a formatter
             -- is found.
             -- javascript = {{'prettierd', 'prettier'}}

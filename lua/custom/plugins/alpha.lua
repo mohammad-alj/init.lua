@@ -28,7 +28,8 @@ return {
             dashboard.button('n', '  > New file', ':ene <BAR> startinsert <CR>'),
             dashboard.button('Space ff', '󰈞  > Find file'),
             dashboard.button('Space f.', '  > Recent'),
-            dashboard.button('q', '⏻  > Quit NVIM', ':qa<CR>'),
+            dashboard.button('Space fn', '  > Find neovim files', ':cd $HOME/.config/nvim | Telescope find_files<CR>'),
+            dashboard.button(':q', '⏻  > Quit NVIM'),
         }
 
         require('alpha').setup(dashboard.opts)

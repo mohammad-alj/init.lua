@@ -52,6 +52,7 @@ return { -- Autocompletion
             Struct = '',
             Constant = '󰏿',
             Property = '',
+            EnumMember = '',
             Method = '󰊕',
             Interface = '',
         }

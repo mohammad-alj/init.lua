@@ -139,9 +139,12 @@ return { -- LSP Configuration & Plugins
             pyright = {},
             jsonls = {},
             tsserver = {},
-            html = {},
             cssls = {},
             csharp_ls = {},
+            html = {},
+            emmet_ls = {},
+            clangd = {},
+            marksman = {},
 
             lua_ls = {
                 -- cmd = {...},
@@ -180,6 +183,7 @@ return { -- LSP Configuration & Plugins
             'goimports-reviser',
             'csharpier',
             'svelte',
+            'clang-format',
         })
         require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

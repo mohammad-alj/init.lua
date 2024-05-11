@@ -41,19 +41,19 @@ return { -- Autocompletion
         luasnip.config.setup {}
 
         local icons = {
-            Text = '󰀬',
-            Keyword = '󰌋',
-            Snippet = '',
-            Function = '󰊕',
+            Text = '',
             Variable = '󰀫',
-            Field = '',
-            Module = '',
-            Class = '',
-            Struct = '',
             Constant = '󰏿',
-            Property = '',
-            EnumMember = '',
-            Method = '󰊕',
+            Snippet = '',
+            Function = '',
+            Method = '',
+            Field = '',
+            Property = '',
+            EnumMember = '',
+            Keyword = '󰌋',
+            Module = '',
+            Class = '',
+            Struct = '',
             Interface = '',
         }
 

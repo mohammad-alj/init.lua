@@ -5,12 +5,12 @@ return {
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
     'ThePrimeagen/vim-be-good',
     {
-        'folke/tokyonight.nvim',
+        'shaunsingh/nord.nvim',
         lazy = false,
         priority = 1000,
         opts = {},
         config = function()
-            vim.cmd.colorscheme 'tokyonight-night'
+            vim.cmd.colorscheme 'nord'
         end,
     },
     -- Highlight todo, notes, etc in comments

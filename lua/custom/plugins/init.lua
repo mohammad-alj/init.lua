@@ -5,15 +5,13 @@ return {
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
     'ThePrimeagen/vim-be-good',
     {
-        'shaunsingh/nord.nvim',
-        lazy = false,
+        'catppuccin/nvim',
+        name = 'catppuccin',
         priority = 1000,
-        opts = {},
         config = function()
-            vim.cmd.colorscheme 'nord'
+            vim.cmd 'colorscheme catppuccin-mocha'
         end,
-    },
-    -- Highlight todo, notes, etc in comments
+    }, -- Highlight todo, notes, etc in comments
     { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
     -- Autopairs
